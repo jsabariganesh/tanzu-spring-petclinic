@@ -48,7 +48,7 @@ spec:
           value: |-
             -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9005
              -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s" -Dspring.devtools.restart.enabled="true" -Dspring.devtools.restart.poll-interval="2s" -Dspring.devtools.restart.quiet-period="1s"
-        image: jsabariganes.azurecr.io/build/sc/spring-petclinic-1-sabari@sha256:37a794c11617d344033132318610bdcf9dc9577e95f7f74083250a38aa464935
+        image: jsabariganes.azurecr.io/build/sc/spring-petclinic-1-sabari@sha256:929084e617816ea9708650f3ef4958c58b5a28286437e9dc066e30092c07a48a
         name: workload
         ports:
         - containerPort: 8080
